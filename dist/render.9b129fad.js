@@ -145,9 +145,14 @@ module.exports = [{
       "title": "Recoome",
       "video": "IvjrDItJKj4"
     }, {
-      "inputs": "5M 2M 236M 5M jc LL2H SD-(on Burtur hit) jM 236LS, fall DR",
+      "inputs": "5M 2M 236M 5M jc LL2H SD-(on Burtur hit) jM 236LS, (delay) dash-(66 is easiest, 44 for same direction) DR",
       "damage": 5644,
       "position": "Midscreen 1",
+      "title": "Burtur"
+    }, {
+      "inputs": "2M 5M jc LL 236H 236S(Burtur) (ginyu drifts) LL (delay, resets auto) LL2H jc LL 236L S(Jeice), (delay) dash-(66 is easiest, 44 for same direction) DR",
+      "damage": "--",
+      "position": "Midscreen 2",
       "title": "Burtur"
     }, {
       "inputs": "2M 5M jc LL 236H S(Jeice) S(Guldo) SD LL2H jc LLL",
@@ -155,6 +160,18 @@ module.exports = [{
       "position": "Midscreen 1",
       "title": "Jeice",
       "video": "ZnTEacON3xo"
+    }, {
+      "inputs": "5M 2M 236M S(Jeice) L jc LL2H jc LLL 236L, DR",
+      "damage": "--",
+      "position": "Corner 1",
+      "title": "Jeice",
+      "video": ""
+    }, {
+      "inputs": "5M 2M S(Jeice) 5L 236S(Guldo) ---> modified Guldo corner 1 route",
+      "damage": "--",
+      "position": "Corner 2",
+      "title": "Jeice",
+      "video": ""
     }]
   }
 }];
