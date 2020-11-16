@@ -1,5 +1,9 @@
-@import "~bulma/bulma.css";
-* {
-  color: red;
+@import "./node_modules/bulma/css/bulma.css";
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
+.inputs {
+  font-family: "Consolas", "Courier", monospace;
+}

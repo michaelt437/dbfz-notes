@@ -57,13 +57,23 @@
           "video": ""
         },
         {
-          "inputs": "5M 2M S(Jeice) 5L 236S(Guldo) ---> modified Guldo corner 1 route",
+          "inputs": "5M 2M 236M S(Jeice) 5L 236S(Guldo) ---> modified <a href='#Guldo-1'>Guldo corner 1</a> route",
           "damage": "--",
           "position": "Corner 2",
           "title": "Jeice",
           "video": ""
         }
-      ]
+      ],
+      "janemba": [
+        {
+          "inputs": "2M 5M instant-jc j2H 2147H jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jL jM jc LL 2H 2M",
+          "damage": "--",
+          "position": "Corner 1",
+          "title": "Hell Gate H",
+          "video": ""
+        },
+      ],
+      "Broly (DBS)": []
     }
   }
 ]

@@ -117,151 +117,79 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"routes.json":[function(require,module,exports) {
-module.exports = [{
-  "characters": {
-    "ginyu": [{
-      "inputs": "5M 2M 236M 236S(Guldo) 5H 236S(Recoome) 5H-(hold a bit) 236S(Burtur) 66-Hold sjc jLM SD-(when Burtur hits) M 236L S(Jeice), fall DR",
-      "damage": 5712,
-      "position": "Midscreen 1",
-      "title": "Guldo",
-      "video": "JFmpQ9XgZRI"
-    }, {
-      "inputs": "5M 2M 236M 236S(Guldo), 5L 236S(Recoome), jMH 236S(Burtur) jL-(on the way down), sj M 2H (delay) SD 214S(Jeice + Burtur), LL2H jc LLL 236L, DR",
-      "damage": 6182,
-      "position": "Corner 1",
-      "title": "Guldo",
-      "video": "uVg6I2YIOYo"
-    }, {
-      "inputs": "5M 2M 236M 236S(Recoome), 2M 236L 236S(Burtur) 66-Hold 5M jc LL (delay) SD-(on Burtur hit) M 236L S(Jeice) (land) DR",
-      "damage": 6107,
-      "position": "Midscreen 1",
-      "title": "Recoome",
-      "video": "9GyGlRJm-8s"
-    }, {
-      "inputs": "5M 2M 236M 236S(Recoome), 5L 236L 236S(Burtur), 5M jc LL2H (delay) SD M 236L S(Jeice) (land) 44 (dash under) DR",
-      "damage": 6087,
-      "position": "Corner 1",
-      "title": "Recoome",
-      "video": "IvjrDItJKj4"
-    }, {
-      "inputs": "5M 2M 236M 5M jc LL2H SD-(on Burtur hit) jM 236LS, (delay) dash-(66 is easiest, 44 for same direction) DR",
-      "damage": 5644,
-      "position": "Midscreen 1",
-      "title": "Burtur"
-    }, {
-      "inputs": "2M 5M jc LL 236H 236S(Burtur) (ginyu drifts) LL (delay, resets auto) LL2H jc 4L4L-(to not get the M) 236L S(Jeice), (delay) dash-(66 is easiest, 44 for same direction) DR",
-      "damage": "--",
-      "position": "Midscreen 2",
-      "title": "Burtur"
-    }, {
-      "inputs": "2M 5M jc LL 236H S(Jeice) S(Guldo) SD LL2H jc LLL",
-      "damage": 4472,
-      "position": "Midscreen 1",
-      "title": "Jeice",
-      "video": "ZnTEacON3xo"
-    }, {
-      "inputs": "5M 2M 236M S(Jeice) L jc LL2H jc LLL 236L, DR",
-      "damage": "--",
-      "position": "Corner 1",
-      "title": "Jeice",
-      "video": ""
-    }, {
-      "inputs": "5M 2M 236M S(Jeice) 5L 236S(Guldo) ---> modified <a href='#Guldo-1'>Guldo corner 1</a> route",
-      "damage": "--",
-      "position": "Corner 2",
-      "title": "Jeice",
-      "video": ""
-    }],
-    "janemba": [{
-      "inputs": "2M 5M instant-jc j2H 2147H jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jL jM jc LL 2H 2M",
-      "damage": "--",
-      "position": "Corner 1",
-      "title": "Hell Gate H",
-      "video": ""
-    }],
-    "Broly (DBS)": []
-  }
-}];
-},{}],"render.js":[function(require,module,exports) {
-"use strict";
+})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-var _routes = _interopRequireDefault(require("./routes.json"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(function () {
-  var routesContainer = document.querySelector("#routes-container");
-  var characterTabs = document.querySelector("#character-tabs");
-  var characters = Object.keys(_routes.default[0].characters);
-  var currentCharacter = characters[0];
-
-  function renderTabs() {
-    var _templateTab = "\n\t\t".concat(characters.map(function (character, index) {
-      return "<li class=\"character-tab ".concat(index === 0 ? 'is-active' : '', "\" data-index=\"").concat(index, "\">\n\t\t\t\t\t<a>").concat(character.toUpperCase(), "</a>\n\t\t\t\t</li>");
-    }).join(""));
-
-    characterTabs.innerHTML = _templateTab;
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
   }
 
-  function renderRoutes() {
-    var _currentRoutes = _routes.default[0].characters[currentCharacter];
+  return bundleURL;
+}
 
-    var _templateCard = "".concat(_currentRoutes.map(function (route, index) {
-      return "\n\t\t\t\t<div class=\"box ".concat(route.video ? 'cursor-pointer' : '', "\">\n\t\t\t\t\t<div class=\"box-header level mb-5\">\n\t\t\t\t\t\t<h5 id=\"").concat(route.title, "-").concat(index, "\" class=\"title is-5 level-left mb-0\"># ").concat(route.title, " - ").concat(route.position, "</h4>\n\t\t\t\t\t\t<p class=\"level-right mb-0\">\n\t\t\t\t\t\t\tDamage: <span class=\"has-text-primary ml-1\">").concat(route.damage, "</span>\n\t\t\t\t\t\t</p>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"box-content\">\n\t\t\t\t\t\t<div class=\"inputs mb-4 p-5 has-background-white-ter\">\n\t\t\t\t\t\t\t").concat(route.inputs, "\t\t\t\t\t\t\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"youtube\">\n\t\t\t\t\t\t\t<iframe class=\"is-hidden mb-2\" width=\"100%\" height=\"500\" src=\"https://www.youtube.com/embed/").concat(route.video, "\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"box-footer\">").concat(route.video ? '<p class="toggleVideo has-text-centered"> <span class="icon has-text-grey-light"> <i class="fas fa-chevron-down"></i> </span> </p>' : '', "</div>\n\t\t\t\t</div>\n\t\t\t\t");
-    }).join(""));
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
 
-    routesContainer.innerHTML = _templateCard;
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
   }
 
-  function tabSelect() {
-    var _tabs = document.querySelectorAll(".character-tab");
+  return '/';
+}
 
-    _tabs.forEach(function (tab) {
-      tab.addEventListener("click", function (e) {
-        var _target = e.currentTarget;
-        var is_active = document.querySelector(".is-active").classList.remove("is-active");
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
 
-        _target.classList.add("is-active");
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
 
-        currentCharacter = characters[_target.getAttribute("data-index")];
-        render();
-      });
-    });
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
   }
 
-  function toggleVideoListener() {
-    var _toggles = document.querySelectorAll(".box");
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
 
-    _toggles.forEach(function (toggle) {
-      toggle.addEventListener("click", function (e) {
-        var _target = e.currentTarget;
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
 
-        if (_target.classList.contains("cursor-pointer")) {
-          _target.querySelector("iframe").classList.toggle("is-hidden");
+    cssTimeout = null;
+  }, 50);
+}
 
-          _target.querySelector("i").classList.toggle("fa-chevron-down");
+module.exports = reloadCSS;
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/@fortawesome/fontawesome-free/css/all.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
 
-          _target.querySelector("i").classList.toggle("fa-chevron-up");
-        }
-      });
-    });
-  }
-
-  function render() {
-    renderRoutes();
-    toggleVideoListener();
-  }
-
-  function init() {
-    renderTabs();
-    render();
-    tabSelect();
-  }
-
-  init();
-})();
-},{"./routes.json":"routes.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\webfonts\\fa-brands-400.eot":[["fa-brands-400.1bb139e6.eot","node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot"],"./..\\webfonts\\fa-brands-400.woff2":[["fa-brands-400.1d34615d.woff2","node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"],"./..\\webfonts\\fa-brands-400.woff":[["fa-brands-400.eca31406.woff","node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff"],"./..\\webfonts\\fa-brands-400.ttf":[["fa-brands-400.df86de32.ttf","node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"],"./..\\webfonts\\fa-brands-400.svg":[["fa-brands-400.f1eb0e8c.svg","node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg"],"./..\\webfonts\\fa-regular-400.eot":[["fa-regular-400.a2c1909d.eot","node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"],"./..\\webfonts\\fa-regular-400.woff2":[["fa-regular-400.5ca8c932.woff2","node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"],"./..\\webfonts\\fa-regular-400.woff":[["fa-regular-400.3c3cc54e.woff","node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff"],"./..\\webfonts\\fa-regular-400.ttf":[["fa-regular-400.cde05ce7.ttf","node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"],"./..\\webfonts\\fa-regular-400.svg":[["fa-regular-400.6ef294e6.svg","node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg"],"./..\\webfonts\\fa-solid-900.eot":[["fa-solid-900.90890cef.eot","node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot"],"./..\\webfonts\\fa-solid-900.woff2":[["fa-solid-900.da0e0451.woff2","node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"],"./..\\webfonts\\fa-solid-900.woff":[["fa-solid-900.935b31ea.woff","node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff"],"./..\\webfonts\\fa-solid-900.ttf":[["fa-solid-900.f2409036.ttf","node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"],"./..\\webfonts\\fa-solid-900.svg":[["fa-solid-900.c87ba59a.svg","node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -465,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","render.js"], null)
-//# sourceMappingURL=/render.9b129fad.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/all.0954b987.js.map
