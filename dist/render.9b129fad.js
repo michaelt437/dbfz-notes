@@ -130,7 +130,8 @@ module.exports = [{
       "inputs": "5M 2M 236M 236S(Guldo), 5L 236S(Recoome), jMH 236S(Burtur) jL-(on the way down), sj M 2H (delay) SD 214S(Jeice + Burtur), LL2H jc LLL 236L, DR",
       "damage": 6182,
       "position": "Corner 1",
-      "title": "Guldo"
+      "title": "Guldo",
+      "video": "uVg6I2YIOYo"
     }, {
       "inputs": "5M 2M 236M 236S(Recoome), 2M 236L 236S(Burtur) 66-Hold 5M jc LL (delay) SD-(on Burtur hit) M 236L S(Jeice) (land) DR",
       "damage": 6107,
@@ -223,7 +224,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50331" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53286" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
