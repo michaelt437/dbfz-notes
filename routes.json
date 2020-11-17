@@ -68,7 +68,7 @@
       ],
       "janemba": [
         {
-          "inputs": "2M 5M instant-jc j2H 2147H jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jLM jc LL 2H 2M",
+          "inputs": "2M 5M jc (instant)-j2H 2147H-(hold up) jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jLM jc LL 2H 2M",
           "damage": "--",
           "position": "Corner 1",
           "title": "Hell Gate H",
