@@ -3,42 +3,42 @@
     "characters": {
       "ginyu": [
         {
-          "inputs": "5M 2M 236M 236S(Guldo) 5H 236S(Recoome) 5H-(hold a bit) 236S(Burtur) 66-Hold sjc jLM SD-(when Burtur hits) M 236L S(Jeice), fall DR",
+          "inputs": "5M 2M 236M 236S(Guldo) 5H 236S(Recoome) 5H-(hold a bit) 236S(Burtur) 66-Hold sjc jLM SD-(when Burtur hits) M 236L S(Jeice) (66 or 44 or jump) DR",
           "damage": 5712,
           "position": "Midscreen 1",
           "title": "Guldo",
           "video": "JFmpQ9XgZRI"
         },
         {
-          "inputs": "5M 2M 236M 236S(Guldo), 5L 236S(Recoome), jMH 236S(Burtur) jL-(on the way down), sj M 2H (delay) SD 214S(Jeice + Burtur), LL2H jc LLL 236L, DR",
+          "inputs": "5M 2M 236M 236S(Guldo) 5L 236S(Recoome) jMH 236S(Burtur) jL-(on the way down) sj M 2H (delay) SD 214S(Jeice + Burtur) LL2H jc LLL 236L DR",
           "damage": 6182,
           "position": "Corner 1",
           "title": "Guldo",
           "video": "uVg6I2YIOYo"
         },
         {
-          "inputs": "5M 2M 236M 236S(Recoome), 2M 236L 236S(Burtur) 66-Hold 5M jc LL (delay) SD-(on Burtur hit) M 236L S(Jeice) (land) DR",
+          "inputs": "5M 2M 236M 236S(Recoome) 2M 236L 236S(Burtur) 66-Hold 5M jc LL (delay) SD-(on Burtur hit) M 236L S(Jeice) land DR",
           "damage": 6107,
           "position": "Midscreen 1",
           "title": "Recoome",
           "video": "9GyGlRJm-8s"
         },
         {
-          "inputs": "5M 2M 236M 236S(Recoome), 5L 236L 236S(Burtur), 5M jc LL2H (delay) SD M 236L S(Jeice) (land) 44 (dash under) DR",
+          "inputs": "5M 2M 236M 236S(Recoome) 5L 236L 236S(Burtur) 5M jc LL2H (delay) SD M 236L S(Jeice) (land) 44 (dash under) DR",
           "damage": 6087,
           "position": "Corner 1",
           "title": "Recoome",
           "video": "IvjrDItJKj4"
         },
         {
-          "inputs": "5M 2M 236M 5M jc LL2H SD-(on Burtur hit) jM 236LS, (delay) dash-(66 is easiest, 44 for same direction) DR",
+          "inputs": "5M 2M 236M 236S(Burtur) 5M jc LL2H SD-(on Burtur hit) jM 236L S(Jeice) (66 or 44 or jump) DR",
           "damage": 5644,
           "position": "Midscreen 1",
           "title": "Burtur",
           "video": "rgYxUdY8oqY"
         },
         {
-          "inputs": "2M 5M jc LL 236H 236S(Burtur) (ginyu drifts) LL (delay, resets auto) LL2H jc 4L4L-(to not get the M) 236L S(Jeice), (delay) dash-(66 is easiest, 44 for same direction) DR",
+          "inputs": "2M 5M jc LL 236H 236S(Burtur) (ginyu drifts) LL (delay, resets auto) LL2H jc 4L4L-(to not get the M) 236L S(Jeice) (66 or 44 or jump) DR",
           "damage": 5069,
           "position": "Midscreen 2",
           "title": "Burtur",
@@ -52,14 +52,14 @@
           "video": "ZnTEacON3xo"
         },
         {
-          "inputs": "5M 2M 236M S(Jeice) L jc LL2H jc LLL 236L, DR",
+          "inputs": "5M 2M 236M S(Jeice) L jc LL2H jc LLL 236L DR",
           "damage": 4940,
           "position": "Corner 1",
           "title": "Jeice",
           "video": "Q_yA3pynIIg"
         },
         {
-          "inputs": "5M 2M 236M S(Jeice) 5L 236S(Guldo) ---> modified <a href='#Guldo-1'>Guldo corner 1</a> route",
+          "inputs": "5M 2M 236M S(Jeice) 5L 236S(Guldo) 5L 236S(Recoome) jMH 236S(Burtur) jL-(on the way down) sj jLM (delay) jc LL S(Jeice) land DR",
           "damage": 5244,
           "position": "Corner 2",
           "title": "Jeice",
