@@ -148,12 +148,14 @@ module.exports = [{
       "inputs": "5M 2M 236M 5M jc LL2H SD-(on Burtur hit) jM 236LS, (delay) dash-(66 is easiest, 44 for same direction) DR",
       "damage": 5644,
       "position": "Midscreen 1",
-      "title": "Burtur"
+      "title": "Burtur",
+      "video": "rgYxUdY8oqY"
     }, {
       "inputs": "2M 5M jc LL 236H 236S(Burtur) (ginyu drifts) LL (delay, resets auto) LL2H jc 4L4L-(to not get the M) 236L S(Jeice), (delay) dash-(66 is easiest, 44 for same direction) DR",
-      "damage": "--",
+      "damage": 5069,
       "position": "Midscreen 2",
-      "title": "Burtur"
+      "title": "Burtur",
+      "video": "T36NmJ9G_aE"
     }, {
       "inputs": "2M 5M jc LL 236H S(Jeice) S(Guldo) SD LL2H jc LLL",
       "damage": 4472,
@@ -162,19 +164,19 @@ module.exports = [{
       "video": "ZnTEacON3xo"
     }, {
       "inputs": "5M 2M 236M S(Jeice) L jc LL2H jc LLL 236L, DR",
-      "damage": "--",
+      "damage": 4940,
       "position": "Corner 1",
       "title": "Jeice",
-      "video": ""
+      "video": "Q_yA3pynIIg"
     }, {
       "inputs": "5M 2M 236M S(Jeice) 5L 236S(Guldo) ---> modified <a href='#Guldo-1'>Guldo corner 1</a> route",
-      "damage": "--",
+      "damage": 5244,
       "position": "Corner 2",
       "title": "Jeice",
-      "video": ""
+      "video": "cgCQb_Aaddc"
     }],
     "janemba": [{
-      "inputs": "2M 5M instant-jc j2H 2147H jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jL jM jc LL 2H 2M",
+      "inputs": "2M 5M instant-jc j2H 2147H jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jLM jc LL 2H 2M",
       "damage": "--",
       "position": "Corner 1",
       "title": "Hell Gate H",
@@ -289,7 +291,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56264" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56873" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
