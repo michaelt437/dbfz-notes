@@ -45,6 +45,12 @@
           "video": "T36NmJ9G_aE"
         },
         {
+          "inputs": "5M 2M 236M 236S(Burtur) L M sjc jM 2H SD-(on Burtur hit) 214S(Jeice - on SD hit) LL2H jc LLL 236L DR",
+          "damage": "--",
+          "position": "Corner 1",
+          "title": "Burtur"
+        },
+        {
           "inputs": "2M 5M jc LL 236H S(Jeice) S(Guldo) SD LL2H jc LLL",
           "damage": 4472,
           "position": "Midscreen 1",
