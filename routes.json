@@ -46,9 +46,10 @@
         },
         {
           "inputs": "5M 2M 236M 236S(Burtur) L M sjc jM 2H SD-(on Burtur hit) 214S(Jeice) LL2H jc LLL 236L DR",
-          "damage": "--",
+          "damage": "6147",
           "position": "Corner 1",
-          "title": "Burtur"
+          "title": "Burtur",
+          "video": "rSyAW8CSLTQ"
         },
         {
           "inputs": "2M 5M jc LL 236H S(Jeice) S(Guldo) SD LL2H jc LLL",
@@ -75,10 +76,17 @@
       "janemba": [
         {
           "inputs": "2M 5M jc (instant)-j2H 2147H-(hold up) jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jLM jc LL 2H 2M",
-          "damage": "--",
+          "damage": "5497",
           "position": "Corner 1",
           "title": "Hell Gate H",
-          "video": ""
+          "video": "_HNs5EOYRow"
+        },
+        {
+          "inputs": "2M 5M jc (instant)-j2H 2147H-(hold up) jM S 236L H-(activate Hell Gate) 5LL 2M 5M 5H S SD-(on fireball hit) jLM jc LL 2H 2M",
+          "damage": "5449",
+          "position": "Corner 2",
+          "title": "Hell Gate H",
+          "video": "iwpC5S1I82c"
         }
       ],
       "Broly (DBS)": []
