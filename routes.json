@@ -17,7 +17,7 @@
           "video": "uVg6I2YIOYo"
         },
         {
-          "inputs": "5M 2M 236M 236S(Recoome) 2M 236L 236S(Burtur) 66-Hold 5M jc LL (delay) SD-(on Burtur hit) M 236L S(Jeice) land DR",
+          "inputs": "5M 2M 236H 236S(Recoome) 2M 236L 236S(Burtur) 66-Hold 5M jc LL (delay) SD-(on Burtur hit) M 236L S(Jeice) land DR",
           "damage": 6107,
           "position": "Midscreen 1",
           "title": "Recoome",
@@ -31,7 +31,7 @@
           "video": "IvjrDItJKj4"
         },
         {
-          "inputs": "5M 2M 236M 236S(Burtur) 5M jc LL2H SD-(on Burtur hit) jM 236L S(Jeice) (66 or 44 or jump) DR",
+          "inputs": "5M 2M 236H 236S(Burtur) 5M jc LL2H SD-(on Burtur hit) jM 236L S(Jeice) (66 or 44 or jump) DR",
           "damage": 5644,
           "position": "Midscreen 1",
           "title": "Burtur",
