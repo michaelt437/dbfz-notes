@@ -3,53 +3,82 @@
     "characters": {
       "ginyu": [
         {
-          "inputs": "5M 2M 236M 236S(Guldo) 5H 236S(Recoome) 5H-(hold a bit) 236S(Burtur) 66-Hold sjc jLM SD-(when Burtur hits) M 236L S(Jeice) (66 or 44 or jump) DR",
+          "inputs": "5M 2M 236M 236S(Guldo) 5H 236S(Recoome) 5H 236S(Burtur) 66-Hold sjc jLM SD M 236L S(Jeice) (66 or 44 or jump) DR",
           "damage": 5712,
           "position": "Midscreen 1",
           "title": "Guldo",
-          "video": "JFmpQ9XgZRI"
+          "video": "JFmpQ9XgZRI",
+          "tips": [
+            "- The <em>5H</em> after Recoome is manually timed (delay or held) for Guldo to disappear when Burtur is called",
+            "- SD on or a fraction after Burtur hits the opponent",
+            "- For the DR, easiest is to land first, then jump. But it's possible to stay the same side in the air with/without an air backdash"
+          ]
         },
         {
-          "inputs": "5M 2M 236M 236S(Guldo) 5L 236S(Recoome) jMH 236S(Burtur) jL-(on the way down) sj M 2H (delay) SD 214S(Jeice + Burtur) LL2H jc LLL 236L DR",
+          "inputs": "5M 2M 236M 236S(Guldo) 5L 236S(Recoome) j(S/M)H 236S(Burtur) jL-(on the way down) sj M 2H (delay) SD 214S(Jeice + Burtur) LL2H jc LLL 236L DR",
           "damage": 6168,
           "position": "Corner 1",
           "title": "Guldo",
-          "video": "uVg6I2YIOYo"
+          "video": "uVg6I2YIOYo",
+          "tips": [
+            "- After Burtur, jump high for the super jump, don't <em>jM</em> too soon. ",
+            "- SD on or a fraction after Burtur hits the opponent",
+            "- Visual cue of success - Ginyu is horizontal on SD hit"
+          ]
         },
         {
           "inputs": "5M 2M 236H 236S(Recoome) 2M 236L 236S(Burtur) 66-Hold 5M jc LL (delay) SD-(on Burtur hit) M 236L S(Jeice) land DR",
           "damage": 6107,
           "position": "Midscreen 1",
           "title": "Recoome",
-          "video": "9GyGlRJm-8s"
+          "video": "9GyGlRJm-8s",
+          "tips": [
+            "- SD on or a fraction after Burtur hits the opponent"
+          ]
         },
         {
           "inputs": "5M 2M 236M 236S(Recoome) 5L 236L 236S(Burtur) 5M jc LL2H (delay) SD M 236L S(Jeice) (land) 44 (dash under) DR",
           "damage": 6087,
           "position": "Corner 1",
           "title": "Recoome",
-          "video": "IvjrDItJKj4"
+          "video": "IvjrDItJKj4",
+          "tips": [
+            "- SD on or a fraction after Burtur hits the opponent"
+          ]
         },
         {
           "inputs": "5M 2M 236H 236S(Burtur) 5M jc LL2H SD-(on Burtur hit) jM 236L S(Jeice) (66 or 44 or jump) DR",
           "damage": 5644,
           "position": "Midscreen 1",
           "title": "Burtur",
-          "video": "rgYxUdY8oqY"
+          "video": "rgYxUdY8oqY",
+          "tips": [
+            "- SD on or a fraction after Burtur hits the opponent",
+            "- For the DR, easiest is to land first, then jump. But it's possible to stay the same side in the air with/without an air backdash"
+          ]
         },
         {
-          "inputs": "2M 5M jc LL 236H 236S(Burtur) (ginyu drifts) LL (delay, resets auto) LL2H jc 4L4L-(to not get the M) 236L S(Jeice) (66 or 44 or jump) DR",
+          "inputs": "2M 5M jc LL 236H 236S(Burtur) (ginyu drifts) LL (delay) LL2H jc 4L4L 236L S(Jeice) (66 or 44 or jump) DR",
           "damage": 5069,
           "position": "Midscreen 2",
           "title": "Burtur",
-          "video": "T36NmJ9G_aE"
+          "video": "T36NmJ9G_aE",
+          "tips": [
+            "- Delay after <em>jLL</em> to reset the auto combo, in order to do it again after Burtur hit",
+            "- After <em>j2H</em>, <em>4L 4L</em> is important to not get jM",
+            "- For the DR, easiest is to land first, then jump. But it's possible to stay the same side in the air with/without an air backdash"
+          ]
         },
         {
           "inputs": "5M 2M 236M 236S(Burtur) L M sjc jM 2H SD-(on Burtur hit) 214S(Jeice) LL2H jc LLL 236L DR",
           "damage": "6147",
           "position": "Corner 1",
           "title": "Burtur",
-          "video": "rSyAW8CSLTQ"
+          "video": "rSyAW8CSLTQ",
+          "tips": [
+            "- Unlike Guldo corner route, no delay between <em>sjc</em> and <em>jM</em>",
+            "- Visual cue of success - Ginyu SD hits at a 45 degree angle"
+          ]
         },
         {
           "inputs": "2M 5M jc LL 236H S(Jeice) S(Guldo) SD LL2H jc LLL",
@@ -70,7 +99,11 @@
           "damage": 5244,
           "position": "Corner 2",
           "title": "Jeice",
-          "video": "cgCQb_Aaddc"
+          "video": "cgCQb_Aaddc",
+          "tips": [
+            "- The super jump should be high to retain height for the double <em>jc</em>",
+            "- Delay the <em>jc</em> enough for Burtur to hit while calling Jeice"
+          ]
         }
       ],
       "janemba": [

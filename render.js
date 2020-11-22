@@ -36,8 +36,20 @@ import routes from "./routes.json";
 						<div class="inputs mb-4 p-5 has-background-white-ter">
 							${route.inputs}							
 						</div>
-						<div class="youtube">
-							<iframe class="is-hidden mb-2" width="100%" height="500" src="https://www.youtube.com/embed/${route.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="details is-hidden">
+							${route.tips ?
+								`
+								<div class="mb-4 p-5 has-background-info-light">
+									Tips:
+									<ul>
+									${route.tips.map(tip => {
+										return `<li>${tip}</li>`
+									}).join("")}
+									</ul>
+								</div>
+								` : ''
+							}
+							<iframe class="mb-2" width="100%" height="500" src="https://www.youtube.com/embed/${route.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 					<div class="box-footer">${route.video ? '<p class="toggleVideo has-text-centered"> <span class="icon has-text-grey-light"> <i class="fas fa-chevron-down"></i> </span> </p>' : ''}</div>
@@ -70,7 +82,7 @@ import routes from "./routes.json";
 			toggle.addEventListener("click", function (e) {
 				let _target = e.currentTarget;
 				if (_target.classList.contains("cursor-pointer")) {
-					_target.querySelector("iframe").classList.toggle("is-hidden");
+					_target.querySelector(".details").classList.toggle("is-hidden");
 					_target.querySelector("i").classList.toggle("fa-chevron-down");
 					_target.querySelector("i").classList.toggle("fa-chevron-up");
 				}
