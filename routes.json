@@ -122,7 +122,16 @@
           "video": "NXSI3th2whE"
         }
       ],
-      "Broly (DBS)": []
+      "Broly (DBS)": [],
+      "TODs": [
+        {
+          "inputs": "TBD",
+          "damage": "dead",
+          "position": "Corner",
+          "title": "Bardock B / Trunks B / Janemba C - 1 Bar start",
+          "video": "0yScBhYBC5c"
+        }
+      ]
     }
   }
 ]
