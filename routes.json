@@ -125,11 +125,37 @@
       "Broly (DBS)": [],
       "TODs": [
         {
-          "inputs": "TBD",
-          "damage": "dead",
+          "inputs": "2M 236L spark 236S 2M 5H Trunks 236L LL (delay) 2M jc IAD jM LL 2M 5H jc LL-(one hit) 2H jc LL H Janemba DR Trunks 236S LVL1 LVL1 LVL3",
+          "damage": "--",
           "position": "Corner",
           "title": "Bardock B / Trunks B / Janemba C - 1 Bar start",
-          "video": "0yScBhYBC5c"
+          "video": "0yScBhYBC5c",
+          "tips": [
+            "- <em>2M 5H Trunks 236L</em> time it to do two things: Bardock can follow up after lariat, opponent is low enough for LL",
+            "- Bardock spark loop tip: delay the 2M after LL to help land jM after IAD"
+          ]
+        },
+        {
+          "inputs": "2M 214L spark 66 6H 5H 2S dash M 5H 2S dash M 5H jc j.MS dash S SD LLL Bardock land 214M vanish hold DR LVL1 LVL1 LVL3",
+          "damage": "--",
+          "position": "Corner",
+          "title": "Cell / Bardock B / 17 A - 2 Bar start",
+          "video": "qgHIawTDq0o",
+          "tips": [
+            "- Cell 2S loop tip: IAD cancel on the second hit of 2S, delay 5H"
+          ]
+        },
+        {
+          "inputs": "2M 214L spark 66 6M 214L Bardock 5H 2S dash M 5H 2S dash M 5H jc jMLL jc LLL Black land 214M vanish on second hit DR Bardock 214S LVL1 LVL1 LVL3",
+          "damage": "--",
+          "position": "Mid screen",
+          "title": "Cell / Bardock B / Black A - 3 Bar start",
+          "video": "3QAzr9cC8Zk",
+          "tips": [
+            "- Cell 2S loop tip: IAD cancel on the second hit of 2S, delay 5H",
+            "- <em>214M vanish on second hit</em>: wait for opponent to hit the ground before vanish",
+            "- after DR, call Bardock ASAP <em>and</em> perform 214S, otherwise opponent will drop"
+          ]
         }
       ]
     }
