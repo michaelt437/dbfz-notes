@@ -29,7 +29,7 @@ import routes from "./routes.json";
 					<div class="box-header level mb-5">
 						<h5 id="${route.title}-${index}" class="title is-5 level-left mb-0"># ${route.title} - ${route.position}</h4>
 						<p class="level-right mb-0">
-							Damage: <span class="has-text-primary ml-1">${route.damage}</span>
+							${route.damage ? 'Damage: <span class="has-text-primary ml-1">'+route.damage+'</span>' : ''}
 						</p>
 					</div>
 					<div class="box-content">
