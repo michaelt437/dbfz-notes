@@ -106,6 +106,8 @@
           ]
         }
       ],
+      "Bardock": [],
+      "Broly (DBS)": [],
       "janemba": [
         {
           "inputs": "2M 5M jc (instant)-j2H 2147H-(hold up) jM 2M H-(activate Hell Gate) whiff-5L L 2M 5M 5H S SD-(on fireball hit) jLM jc LL 2H 2M",
@@ -122,7 +124,7 @@
           "video": "NXSI3th2whE"
         }
       ],
-      "Broly (DBS)": [],
+      "SSJ4 Gogeta": [],
       "TODs": [
         {
           "inputs": "2M 236L spark 236S 2M 5H Trunks 236L LL (delay) 2M jc IAD jM LL 2M 5H jc LL-(one hit) 2H jc LL H Janemba DR Trunks 236S LVL1 LVL1 LVL3",
@@ -161,6 +163,15 @@
           "video": "iMby13Qmrss",
           "tips": [
             "- <em>214S Goku</em>: call Goku as the spin ends to keep hitstun"
+          ]
+        },
+        {
+          "inputs": "2M 5M 22S spark 2M 5M jc jML 2H DR M H vanish hold M (delay) H S dash M (delay) H S dash M (delay) H S 214L Bardock 236H (or j246H) vanish DR 236M LVL1 LVL1 LVL3",
+          "position": "In Corner",
+          "title": "SSJ4 Gogeta / Baby / Bardock - 5.5 bar",
+          "video": "POV6iqylCGw",
+          "tips": [
+            "- <em>214L Bardock</em>: Bardock call really quick after 214L, almost plink timing or same time"
           ]
         }
       ]

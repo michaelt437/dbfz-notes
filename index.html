@@ -21,5 +21,24 @@
     </div>
   </div>
   <script type="text/javascript" src="render.js"></script>
+  <script>
+    let options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 1.0
+    };
+
+    let observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        console.log("I have arrived! ", entry);
+      })
+    }, options);
+
+    let boxes = document.querySelectorAll(".box");
+
+    boxes.forEach(box => {
+      observer.observe(box);
+    })
+  </script>
 </body>
 </html>
